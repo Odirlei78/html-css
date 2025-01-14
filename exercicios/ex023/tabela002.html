@@ -11,8 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            position: relative;
-        }
+       }
 
         td,th {
             border: 1px solid black;
@@ -42,6 +41,9 @@
         
         td.num {
             text-align:  right;
+        thead, tfoot {
+            background-color: gray;
+            color:white;
         }
     </style>
 </head>
@@ -53,6 +55,10 @@
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
             </tr>
         </thead>
         <tbody>
@@ -174,6 +180,20 @@
             <tr> 
               <th scope="row">Total de Habitantes</th> 
               <td class="num"><strong>210.147.125</strong></td> 
+            <td>São Paulo</td>  
+            <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <td>Rio de Janeiro</td>
+            <td>17 264 943</td>
+        </tbody>
+        <tfoot>
+            <tr> 
+              <th>Total de Habitantes</th> 
+              <td>00000</td> 
             </tr>
         </tfoot>
     </table>
